@@ -1,0 +1,14 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<h1>Main page</h1>
+    <p>Welcome to our website <em>World of books</em></p>
+    <h2>Dynamic contents</h2>
+        <ul>
+            <li>Count of books: {{ num_books }}</li>
+            <li>Count of instance: {{ num_instance }}</li>
+            <li>Count of instance in order: {{ num_instance_available }}</li>
+            <li>Count of authors: {{ num_authors }}</li>
+        </ul>
+<p>Count of visit - {{ num_visits }}</p>
+{% endblock %}
